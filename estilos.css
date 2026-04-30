@@ -645,6 +645,7 @@
       gap: 8px;
       animation: fadeIn .8s ease-out;
       transition: all .3s ease;
+      text-align: center;
     }
     footer:hover {
       box-shadow: 0 -4px 12px rgba(0, 0, 0, .05);
@@ -667,3 +668,4 @@
       .mockup-wrap { gap: 12px; }
       .screen-card { width: 170px; }
     }
+    
