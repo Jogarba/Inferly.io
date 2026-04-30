@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Inferly — Tu asistente de estadística</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="/images/Logo.png"/>
+  <link rel="stylesheet" href="estilos.css"/>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <img src="images/Logo.png" alt="Inferly" class="logo"/>
+    <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="#features">Características</a></li>
+      <li><a href="#alfred">Alfred</a></li>
+      <li><a href="#download" class="nav-btn">Descargar</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-chip">📱 App para Android · v1.2.0</div>
+    <h1>Tu asistente de <em>estadística</em><br/>siempre contigo</h1>
+    <p>Inferly te ayuda a calcular, entender y aprender estadística. Herramientas de análisis + un tutor de IA, todo en una app gratuita.</p>
+    <div class="hero-actions">
+      <a href="#download" class="btn btn-solid">⬇ Descargar gratis</a>
+      <a href="#features" class="btn btn-outline">Ver características</a>
+    </div>
+
+    <div class="mockup-wrap">
+      <div class="screen-card">
+        <div class="sc-label">Prueba de Hipótesis</div>
+        <div class="sc-value">Z = 2.31</div>
+        <div class="sc-sub" style="color:#3FB1A3;">✓ Rechazar H₀</div>
+        <div class="sc-bar"><div class="sc-bar-fill" style="width:78%"></div></div>
+      </div>
+      <div class="screen-card">
+        <div class="sc-label">Intervalo de Confianza</div>
+        <div class="sc-value">[ 14.2 ; 18.6 ]</div>
+        <div class="sc-sub">Nivel 95% · σ conocida</div>
+        <div class="sc-bar"><div class="sc-bar-fill" style="width:95%"></div></div>
+      </div>
+      <div class="screen-card">
+        <div class="sc-label">Asistente Alfred</div>
+        <div class="sc-chat">
+          <div class="sc-msg u">¿Qué es el valor p?</div>
+          <div class="sc-msg a">Es la probabilidad de obtener ese resultado si H₀ fuera cierta. Si p &lt; 0.05, rechazas.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <div class="stats-strip">
+    <div class="stat"><div class="stat-n">6+</div><div class="stat-l">Herramientas de análisis</div></div>
+    <div class="stat"><div class="stat-n">IA</div><div class="stat-l">Tutor disponible 24/7</div></div>
+    <div class="stat"><div class="stat-n">100%</div><div class="stat-l">Gratuita para estudiantes</div></div>
+    <div class="stat"><div class="stat-n">∞</div><div class="stat-l">Historial de análisis</div></div>
+  </div>
+
+  <!-- FEATURES -->
+  <section id="features">
+    <header>
+      <h2>¿Qué puedes hacer con Inferly?</h2>
+      <p>Cubre los temas más importantes de tu curso de estadística.</p>
+    </header>
+    <div class="feat-grid">
+      <div class="feat">
+        <div class="feat-ico">📊</div>
+        <h3>Pruebas de Hipótesis</h3>
+        <p>Calcula el estadístico Z, el valor crítico y obtén la decisión automáticamente. Compatible con medias y proporciones.</p>
+      </div>
+      <div class="feat">
+        <div class="feat-ico">📏</div>
+        <h3>Intervalos de Confianza</h3>
+        <p>Genera el intervalo de confianza para una media o proporción con niveles del 90%, 95% o 99%.</p>
+      </div>
+      <div class="feat">
+        <div class="feat-ico">⚖️</div>
+        <h3>Diferencia de Medias</h3>
+        <p>Compara dos grupos de forma sencilla. Perfecto para trabajos de campo y experimentos comparativos.</p>
+      </div>
+      <div class="feat">
+        <div class="feat-ico">📐</div>
+        <h3>Diferencia de Proporciones</h3>
+        <p>Analiza si dos proporciones son estadísticamente distintas, paso a paso.</p>
+      </div>
+      <div class="feat">
+        <div class="feat-ico">🌙</div>
+        <h3>Modo oscuro y claro</h3>
+        <p>Cambia el tema según tu preferencia. Diseñada para que estudiar no canse los ojos.</p>
+      </div>
+      <div class="feat">
+        <div class="feat-ico">📁</div>
+        <h3>Historial de análisis</h3>
+        <p>Tus cálculos y conversaciones se guardan automáticamente en tu dispositivo, sin internet.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ALFRED -->
+  <section id="alfred">
+    <div class="alfred-inner">
+      <div class="alfred-info">
+        <h2>Conoce a <span>Alfred</span>,<br/>tu tutor de IA</h2>
+        <p>Alfred no solo da respuestas: te enseña el razonamiento detrás de cada cálculo. Habla en español, de forma clara y sin rodeos.</p>
+        <ul class="alfred-list">
+          <li>Responde preguntas teóricas y prácticas</li>
+          <li>Muestra cada paso del cálculo explicado</li>
+          <li>Siempre explica qué significa el resultado</li>
+          <li>Habla de forma natural, no robótica</li>
+        </ul>
+      </div>
+      <div class="alfred-demo">
+        <div class="ademo-label">💬 Ejemplo real</div>
+        <div class="ademo-msg u">¿Cuándo rechazo la hipótesis nula?</div>
+        <div class="ademo-msg a">
+          <div class="ademo-name">Alfred</div>
+          Rechazas H₀ cuando el estadístico Z cae fuera del rango crítico. Con α = 0.05 bilateral, ese rango es ±1.96. Si tu Z calculado supera ese valor, el resultado no se explica por el azar.
+        </div>
+        <div class="ademo-msg u">¿Y si es unilateral?</div>
+        <div class="ademo-msg a">
+          <div class="ademo-name">Alfred</div>
+          En una prueba unilateral derecha con α = 0.05, el Z crítico es 1.645. Solo necesitas que tu Z calculado sea mayor a ese valor para rechazar H₀.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DOWNLOAD -->
+  <section id="download">
+    <h2>Descárgala gratis</h2>
+    <p>Disponible para Android. Sin registro, sin anuncios.</p>
+    <div class="dl-box">
+      <img src="/images/Logo.png" alt="Inferly" class="dl-icon"/>
+      <div class="dl-name">Inferly</div>
+      <div class="dl-version">Versión 1.2.0 · Android</div>
+      <a href="apk/inferly.apk" download class="dl-btn">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M5 20h14v-2H5v2zm7-18L5.33 13h4.17v3h5v-3h4.17L12 2z"/></svg>
+        Descargar APK
+      </a>
+      <div class="dl-note">Gratis · Sin registro · Sin anuncios</div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <span class="f-logo">Inferly</span>
+    <span class="f-copy">Hecho por y para estudiantes · 2026</span>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
