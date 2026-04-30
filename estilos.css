@@ -16,8 +16,139 @@
 
     body {
       font-family: 'Inter', sans-serif;
-      background: var(--bg);
+      background: linear-gradient(135deg, #f8f9fa 70%, #e8f4f8 100%);
       color: var(--text);
+    }
+
+    /* --- CONTEMPORARY UPGRADES --- */
+    section, .stats-strip {
+      box-shadow: 0 4px 32px rgba(76, 125, 167, 0.07);
+      border-radius: 24px;
+      margin-bottom: 48px;
+    }
+
+    #features {
+      background: #fff;
+      border-radius: 24px;
+      box-shadow: 0 8px 32px rgba(76, 125, 167, 0.10);
+      padding: 80px 6%;
+      margin-top: 40px;
+    }
+
+    .feat {
+      border-radius: 18px;
+      box-shadow: 0 2px 12px rgba(76, 125, 167, 0.07);
+      border: 1.5px solid var(--border);
+      background: linear-gradient(135deg, #fff 80%, #f8f9fa 100%);
+      transition: box-shadow .3s, border-color .3s, transform .3s;
+    }
+    .feat:hover {
+      box-shadow: 0 8px 32px rgba(76, 125, 167, 0.18);
+      border-color: var(--primary-lt);
+      transform: translateY(-6px) scale(1.03);
+    }
+
+    .feat-ico {
+      background: linear-gradient(135deg, var(--primary-lt) 30%, var(--accent) 100%);
+      color: #fff;
+      font-size: 1.5rem;
+      box-shadow: 0 2px 8px rgba(63, 177, 163, .10);
+    }
+
+    /* Nueva sección de información extra en características */
+    .feat-extra {
+      background: linear-gradient(135deg, #f8f9fa 80%, #e8f4f8 100%);
+      border: 1.5px solid var(--border);
+      border-radius: 18px;
+      box-shadow: 0 2px 12px rgba(76, 125, 167, 0.07);
+      padding: 36px 28px 28px 36px;
+      margin: 40px auto 0 auto;
+      max-width: 900px;
+      animation: fadeIn .8s;
+    }
+    .feat-extra h3 {
+      color: var(--primary);
+      font-size: 1.18rem;
+      margin-bottom: 18px;
+    }
+    .feat-extra ol {
+      color: var(--text);
+      font-size: .98rem;
+      line-height: 1.7;
+    }
+    .feat-extra li {
+      margin-bottom: 18px;
+      padding-left: 4px;
+    }
+
+    /* MEJORAS EN BOTONES */
+    .btn, .dl-btn {
+      border-radius: 12px;
+      font-size: 1.05rem;
+      font-weight: 700;
+      letter-spacing: .01em;
+      box-shadow: 0 4px 18px rgba(76, 125, 167, .10);
+      transition: box-shadow .3s, background .3s, color .3s, transform .3s;
+    }
+    .btn-solid, .dl-btn {
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      color: #fff;
+    }
+    .btn-solid:hover, .dl-btn:hover {
+      filter: brightness(1.08);
+      box-shadow: 0 8px 32px rgba(63, 177, 163, .18);
+      transform: translateY(-2px) scale(1.04);
+    }
+    .btn-outline {
+      border-radius: 12px;
+      border: 2px solid var(--primary-lt);
+      color: var(--primary);
+      background: #fff;
+    }
+    .btn-outline:hover {
+      background: var(--primary-lt);
+      color: #fff;
+    }
+
+    /* MEJORAS EN MOCKUPS/CARDS */
+    .screen-card {
+      border-radius: 22px;
+      box-shadow: 0 8px 32px rgba(76, 125, 167, 0.13);
+      border: 1.5px solid var(--primary-lt);
+      background: linear-gradient(135deg, #23272f 80%, #3FB1A3 100%);
+    }
+
+    /* MEJORAS EN STATS */
+    .stats-strip {
+      border-radius: 18px;
+      box-shadow: 0 2px 12px rgba(76, 125, 167, 0.07);
+      margin-top: 32px;
+    }
+    .stat {
+      border-radius: 12px;
+      margin: 8px;
+      background: linear-gradient(135deg, #fff 80%, #e8f4f8 100%);
+      box-shadow: 0 2px 8px rgba(76, 125, 167, 0.07);
+    }
+
+    /* MEJORAS EN FOOTER */
+    footer {
+      background: linear-gradient(90deg, var(--primary-lt), var(--primary));
+      color: #fff;
+      border-radius: 18px 18px 0 0;
+      box-shadow: 0 -2px 12px rgba(76, 125, 167, 0.10);
+      margin-top: 48px;
+      padding: 24px 0;
+      text-align: center;
+    }
+    .f-logo {
+      font-weight: 800;
+      font-size: 1.1rem;
+      letter-spacing: .04em;
+    }
+    .f-copy {
+      color: #e0e0e0;
+      margin-left: 18px;
     }
 
     /* ── ANIMATIONS ── */
@@ -293,14 +424,10 @@
       animation: slideUp .9s ease-out .4s both;
     }
     .screen-card {
-      background: #1a1a1a;
-      border-radius: 20px;
-      padding: 20px;
-      width: 200px;
-      border: 1.5px solid #333;
-      box-shadow: 0 12px 40px rgba(0,0,0,.15);
-      transition: all .4s cubic-bezier(.34, 1.56, .64, 1);
-      animation: slideUp 1s ease-out both;
+      border-radius: 22px;
+      box-shadow: 0 8px 32px rgba(76, 125, 167, 0.13);
+      border: 1.5px solid var(--primary-lt);
+      background: linear-gradient(135deg, #23272f 80%, #3FB1A3 100%);
     }
     .screen-card:nth-child(1) { animation-delay: .2s; }
     .screen-card:nth-child(2) { animation-delay: .3s; }
@@ -342,22 +469,15 @@
 
     /* ── STATS ── */
     .stats-strip {
-      display: flex;
-      justify-content: center;
-      gap: 0;
-      flex-wrap: wrap;
-      background: var(--white);
-      border-bottom: 1px solid var(--border);
-      background: linear-gradient(135deg, var(--white), rgba(76, 125, 167, .02));
+      border-radius: 18px;
+      box-shadow: 0 2px 12px rgba(76, 125, 167, 0.07);
+      margin-top: 32px;
     }
     .stat {
-      flex: 1;
-      min-width: 140px;
-      text-align: center;
-      padding: 28px 20px;
-      border-right: 1px solid var(--border);
-      transition: all .3s ease;
-      animation: slideUp 1s ease-out both;
+      border-radius: 12px;
+      margin: 8px;
+      background: linear-gradient(135deg, #fff 80%, #e8f4f8 100%);
+      box-shadow: 0 2px 8px rgba(76, 125, 167, 0.07);
     }
     .stat:nth-child(1) { animation-delay: .1s; }
     .stat:nth-child(2) { animation-delay: .2s; }
@@ -377,7 +497,11 @@
 
     /* ── FEATURES ── */
     #features {
+      background: #fff;
+      border-radius: 24px;
+      box-shadow: 0 8px 32px rgba(76, 125, 167, 0.10);
       padding: 80px 6%;
+      margin-top: 40px;
       animation: fadeIn .8s ease-out;
     }
     #features header {
@@ -401,13 +525,11 @@
       margin: 0 auto;
     }
     .feat {
-      background: var(--white);
-      border: 1px solid var(--border);
-      border-radius: 14px;
-      padding: 28px 24px;
-      transition: all .4s cubic-bezier(.34, 1.56, .64, 1);
-      animation: slideUp 1s ease-out both;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, .04);
+      border-radius: 18px;
+      box-shadow: 0 2px 12px rgba(76, 125, 167, 0.07);
+      border: 1.5px solid var(--border);
+      background: linear-gradient(135deg, #fff 80%, #f8f9fa 100%);
+      transition: box-shadow .3s, border-color .3s, transform .3s;
     }
     .feat:nth-child(1) { animation-delay: .1s; }
     .feat:nth-child(2) { animation-delay: .2s; }
@@ -635,35 +757,40 @@
 
     /* ── FOOTER ── */
     footer {
-      background: var(--white);
-      border-top: 1px solid var(--border);
-      padding: 24px 6%;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      gap: 8px;
-      animation: fadeIn .8s ease-out;
-      transition: all .3s ease;
-    }
-    footer:hover {
-      box-shadow: 0 -4px 12px rgba(0, 0, 0, .05);
+      background: linear-gradient(90deg, var(--primary-lt), var(--primary));
+      color: #fff;
+      border-radius: 18px 18px 0 0;
+      box-shadow: 0 -2px 12px rgba(76, 125, 167, 0.10);
+      margin-top: 48px;
+      padding: 24px 0;
+      text-align: center;
     }
     .f-logo {
       font-weight: 800;
       font-size: 1.1rem;
-      color: var(--primary);
-      transition: transform .3s ease;
+      letter-spacing: .04em;
     }
-    footer:hover .f-logo {
-      transform: scale(1.05);
+    .f-copy {
+      color: #e0e0e0;
+      margin-left: 18px;
     }
-    .f-copy { font-size: .8rem; color: var(--muted); }
 
     /* ── RESPONSIVE ── */
+    @media (max-width: 900px) {
+      #features, #alfred, .feat-extra {
+        padding: 36px 4%;
+      }
+      .feat-extra {
+        padding: 28px 10px 18px 18px;
+      }
+    }
     @media (max-width: 640px) {
-      .nav-links { display: none; }
-      .alfred-inner { grid-template-columns: 1fr; }
-      .mockup-wrap { gap: 12px; }
-      .screen-card { width: 170px; }
+      section, .stats-strip, #features, .feat-extra {
+        border-radius: 12px;
+        margin-bottom: 24px;
+        box-shadow: 0 2px 8px rgba(76, 125, 167, 0.07);
+      }
+      .feat-extra {
+        padding: 18px 4px 10px 10px;
+      }
     }
