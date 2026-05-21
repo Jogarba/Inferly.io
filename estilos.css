@@ -668,4 +668,22 @@
       .mockup-wrap { gap: 12px; }
       .screen-card { width: 170px; }
     }
+.dl-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+.dl-btn-apk {
+  background: #3FB1A3;
+  color: #fff;
+}
+
+.dl-btn-manual {
+  background: transparent;
+  color: #3FB1A3;
+  border: 1.5px solid #3FB1A3;
+}
     
